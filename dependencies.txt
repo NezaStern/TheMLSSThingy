@@ -1,0 +1,10 @@
+pygame
+
+lyricsgenius
+
+spotdl
+ffmpeg
+
+ffmpeg-python
+
+mutagen

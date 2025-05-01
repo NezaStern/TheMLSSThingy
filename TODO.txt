@@ -1,0 +1,27 @@
+[X] nared da se music converta v ogg iz mp3-ja 
+		takoj k se downloada?
+
+[X] posledično fix the metadata da bo za ogg ačldfkjčladjsf AKA mutagen lyrics tags dont work now??
+
+[ ] GUI'??!???????????????!!!!?!?!?!?!?!?!?!!!!!!!!	
+
+- player tab - lyrics
+- display song title and artist on screen
+- music acctualy playing?
+  - play button is pause button?
+  - next and prev buttons working
+- queue? for music (just the /Music folder cela ig?)
+- scrolable lyrics in player tab?
+
+- files tab displaying music files acctauly
+
+- downloadable music in download tab
+	- able to input song name.. and download it (threadiing...)
+	- text input window for searching music?
+
+- sheet tab
+	- seperate folder for mscxz files (usesr manuly import ker i cant get downlaoding them to work)
+	- dispalying the sheet music with music notes next to notes..
+	- playable sheet? (probbly not)
+
+-- ACCTUAL GUI NOT JUST UGLY COLORS LOL
