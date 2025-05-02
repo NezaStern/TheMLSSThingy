@@ -98,11 +98,22 @@ def player_tab():
 	player_color = color_dark_purple
 	player_hover_color = "White"
 	player_font = 50
-	PLAY = Button(">", (screen_width/2-20, 550), color=player_color, hovering_color=player_hover_color, font_size=player_font)
-	NEXT = Button(">|", (screen_width/2+60, 550), color=player_color, hovering_color=player_hover_color, font_size=player_font)
-	PREV = Button("|<", (screen_width/2-120, 550), color=player_color, hovering_color=player_hover_color, font_size=player_font)
+	player_hight = 540
+	PLAY = Button(">", (screen_width/2-20, player_hight), color=player_color, hovering_color=player_hover_color, font_size=player_font)
+	NEXT = Button(">|", (screen_width/2+60, player_hight), color=player_color, hovering_color=player_hover_color, font_size=player_font)
+	PREV = Button("|<", (screen_width/2-120, player_hight), color=player_color, hovering_color=player_hover_color, font_size=player_font)
 
 	PLAY_BUTTONS = [PLAY, NEXT, PREV]
+
+	current_song_title = "test title ..........aaa"
+	current_song_artist = "test artist name"
+	playing_time = 11.11
+
+	title = Text(current_song_title, (20, 480), "Pink", 35)
+	artist = Text(current_song_artist, (25, 505), color_dark_purple, 22)
+	playing_time_text = Text(str(playing_time), (screen_width-85, screen_height-90), "White", 28)
+
+	text_to_display = [title, artist, playing_time_text]
 	###
 
 	while True:
@@ -118,10 +129,13 @@ def player_tab():
 
 		info_text.draw(screen)
 
-		timeline = pygame.draw.rect(screen, "Gray", rect=(10, 530, screen_width-20, 5))
+		timeline = pygame.draw.rect(screen, "Gray", rect=(40, 530, screen_width-80, 5))
 
 		for button in PLAY_BUTTONS:
 			button.update(screen, MOUSE_POS)
+
+		for t in text_to_display:
+			t.draw(screen)
 
 		###
 
